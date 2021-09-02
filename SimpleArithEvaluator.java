@@ -9,7 +9,6 @@
 
 public class SimpleArithEvaluator extends SimpleArithBaseVisitor<Integer> {
     /** Integer */
-    
     public Integer visitIntExpr(SimpleArithParser.IntExprContext ctx) {
         return new Integer(ctx.Integer().getText());
     }
